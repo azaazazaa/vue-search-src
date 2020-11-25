@@ -1,0 +1,79 @@
+@font-face {
+    font-family:'Regular';
+    src: url('fonts/ALSSchlangesans/ALSSchlangesans/s.eot');
+	src: url('fonts/ALSSchlangesans/ALSSchlangesans/s.eot?#iefix') format('embedded-opentype'),
+		url('fonts/ALSSchlangesans/ALSSchlangesans/s.woff2') format('woff2'),
+		url('fonts/ALSSchlangesans/ALSSchlangesans/s.woff') format('woff'),
+		url('fonts/ALSSchlangesans/ALSSchlangesans/s.svg#s') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-04F9;
+}
+@font-face {
+    font-family:'Regular-bold';
+    src: url('fonts/ALSSchlangesans/ALSSchlangesans-Bold/s Bold.eot');
+	src: url('fonts/ALSSchlangesans/ALSSchlangesans-Bold/s Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/ALSSchlangesans/ALSSchlangesans-Bold/s Bold.woff2') format('woff2'),
+		url('fonts/ALSSchlangesans/ALSSchlangesans-Bold/s Bold.woff') format('woff'),
+		url('fonts/ALSSchlangesans/ALSSchlangesans-Bold/s Bold.svg#s') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-04F9;
+}
+
+body{
+    font-family: 'Regular';
+    height: 900px;
+    background: #E5E5E5;
+    padding: 65px 10% 0;
+}
+
+.font-body-regular{
+    font-family: 'Regular';
+    font-size: 17px;
+    line-height: 22px;
+}
+.font-gray-regular{
+    font-family: 'Regular';
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(48, 60, 66, 0.6);
+}
+.font-body-bold{
+    font-family: 'Regular-bold';
+    font-size: 17px;
+    line-height: 22px;
+}
+.input-text{
+    background: #FFFFFF;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 19px;
+    height: 40px;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #F3F2F5;
+    outline:none;
+    padding-left: 20px;
+    &:focus{
+        border: 1px solid #3914AF;
+    }
+    &_disabled{
+        background: lighten(grey, 40%) !important;
+        cursor: default !important; 
+        color: rgba(48, 60, 66, 0.6);
+    }
+}
+
+.icons__trash{
+    display: inline-block;
+    width: 15px;
+    height: 17px;
+    background-image: url(./icons/trash.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 5px;
+}
